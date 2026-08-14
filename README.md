@@ -76,7 +76,6 @@ thebearsagentswarm/
 │   ├── nutrition/AGENT.md
 │   ├── workout/AGENT.md
 │   ├── recovery/AGENT.md
-│   ├── recovery/create_recovery_specialist.py
 │   ├── safety/AGENT.md
 │   ├── synthesis/AGENT.md
 │   └── coordinator/AGENT.md
