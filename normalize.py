@@ -35,9 +35,8 @@ def normalize() -> None:
     # Workouts — preferred: garmin
     workouts = garmin.get("workouts", [])
 
-    # Recovery — preferred: whoop
-    recovery_source = whoop if preferred.get("recovery") == "whoop" else oura
-    recovery = recovery_source.get("daily", [])
+    # Recovery — Whoop only (recovery_score_pct isn't present in Oura's schema)
+    recovery = whoop.get("daily", [])
 
     # Sleep — preferred: oura
     sleep_source = oura if preferred.get("sleep") == "oura" else whoop
