@@ -1,0 +1,29 @@
+{
+  "name": "Alex",
+  "goal": "Run a half marathon by December 2026",
+  "preferred_workout_types": ["running", "strength training"],
+  "equipment_available": ["gym membership", "resistance bands", "foam roller"],
+  "dietary_restrictions": ["no shellfish"],
+  "meals_per_day": {
+    "breakfast": true,
+    "morning_snack": false,
+    "lunch": true,
+    "afternoon_snack": true,
+    "dinner": true
+  },
+  "injury_history": ["left knee tendinitis (2024) - cleared by physio"],
+  "health_constraints": [],
+  "schedule_constraints": "Meetings 8-10am Mon/Wed/Fri. Traveling Thursday. Prefer not to work out after 7pm.",
+  "macro_targets": {
+    "calories": 2000,
+    "protein_g": 150,
+    "carbs_g": 200,
+    "fat_g": 65
+  },
+  "preferred_data_sources": {
+    "sleep": "oura",
+    "recovery": "whoop",
+    "workouts": "garmin",
+    "nutrition": "myfitnesspal"
+  }
+}

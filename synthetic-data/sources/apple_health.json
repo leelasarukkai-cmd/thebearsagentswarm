@@ -1,0 +1,37 @@
+{
+  "export_date": "2026-08-17",
+  "week_of": "2026-08-11",
+  "workouts": [
+    { "date": "2026-08-11", "type": "run", "duration_min": 42, "distance_km": 6.8, "avg_hr": 162, "calories_burned": 410 },
+    { "date": "2026-08-13", "type": "strength", "duration_min": 48, "calories_burned": 290 },
+    { "date": "2026-08-15", "type": "run", "duration_min": 55, "distance_km": 8.9, "avg_hr": 158, "calories_burned": 520 },
+    { "date": "2026-08-17", "type": "run", "duration_min": 30, "distance_km": 4.5, "avg_hr": 145, "calories_burned": 280 }
+  ],
+  "sleep": [
+    { "date": "2026-08-11", "in_bed_min": 430, "asleep_min": 375, "deep_min": 62, "rem_min": 78 },
+    { "date": "2026-08-12", "in_bed_min": 480, "asleep_min": 435, "deep_min": 90, "rem_min": 95 },
+    { "date": "2026-08-13", "in_bed_min": 390, "asleep_min": 340, "deep_min": 55, "rem_min": 70 },
+    { "date": "2026-08-14", "in_bed_min": 460, "asleep_min": 415, "deep_min": 85, "rem_min": 88 },
+    { "date": "2026-08-15", "in_bed_min": 500, "asleep_min": 455, "deep_min": 92, "rem_min": 102 },
+    { "date": "2026-08-16", "in_bed_min": 420, "asleep_min": 370, "deep_min": 58, "rem_min": 72 },
+    { "date": "2026-08-17", "in_bed_min": 445, "asleep_min": 400, "deep_min": 78, "rem_min": 85 }
+  ],
+  "heart_rate": [
+    { "date": "2026-08-11", "resting_bpm": 58, "max_bpm": 174 },
+    { "date": "2026-08-12", "resting_bpm": 55, "max_bpm": 102 },
+    { "date": "2026-08-13", "resting_bpm": 60, "max_bpm": 168 },
+    { "date": "2026-08-14", "resting_bpm": 57, "max_bpm": 98 },
+    { "date": "2026-08-15", "resting_bpm": 54, "max_bpm": 172 },
+    { "date": "2026-08-16", "resting_bpm": 59, "max_bpm": 110 },
+    { "date": "2026-08-17", "resting_bpm": 56, "max_bpm": 155 }
+  ],
+  "steps": [
+    { "date": "2026-08-11", "count": 10200 },
+    { "date": "2026-08-12", "count": 7400 },
+    { "date": "2026-08-13", "count": 9800 },
+    { "date": "2026-08-14", "count": 6100 },
+    { "date": "2026-08-15", "count": 12300 },
+    { "date": "2026-08-16", "count": 5900 },
+    { "date": "2026-08-17", "count": 8700 }
+  ]
+}

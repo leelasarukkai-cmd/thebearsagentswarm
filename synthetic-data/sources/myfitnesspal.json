@@ -1,0 +1,41 @@
+{
+  "export_date": "2026-08-17",
+  "week_of": "2026-08-11",
+  "daily": [
+    {
+      "date": "2026-08-11",
+      "calories": 1920, "protein_g": 118, "carbs_g": 195, "fat_g": 62, "water_oz": 68,
+      "meals": { "breakfast": ["oatmeal", "banana", "almond butter"], "lunch": ["chicken caesar salad"], "snack": ["greek yogurt", "blueberries"], "dinner": ["salmon", "brown rice", "broccoli"] }
+    },
+    {
+      "date": "2026-08-12",
+      "calories": 1780, "protein_g": 105, "carbs_g": 178, "fat_g": 58, "water_oz": 60,
+      "meals": { "breakfast": ["eggs", "toast", "avocado"], "lunch": ["turkey wrap"], "snack": ["apple", "peanut butter"], "dinner": ["chicken stir fry", "rice"] }
+    },
+    {
+      "date": "2026-08-13",
+      "calories": 2150, "protein_g": 142, "carbs_g": 218, "fat_g": 70, "water_oz": 72,
+      "meals": { "breakfast": ["protein smoothie", "banana"], "lunch": ["tuna salad", "crackers"], "snack": ["protein bar"], "dinner": ["ground turkey pasta", "marinara"] }
+    },
+    {
+      "date": "2026-08-14",
+      "calories": 1650, "protein_g": 98, "carbs_g": 165, "fat_g": 52, "water_oz": 55,
+      "meals": { "breakfast": ["granola", "milk"], "lunch": ["caesar salad", "grilled chicken"], "snack": ["mixed nuts"], "dinner": ["baked cod", "roasted vegetables"] }
+    },
+    {
+      "date": "2026-08-15",
+      "calories": 2280, "protein_g": 158, "carbs_g": 235, "fat_g": 72, "water_oz": 80,
+      "meals": { "breakfast": ["eggs", "oatmeal", "orange juice"], "lunch": ["chicken bowl", "beans", "rice"], "snack": ["greek yogurt", "granola"], "dinner": ["steak", "sweet potato", "asparagus"] }
+    },
+    {
+      "date": "2026-08-16",
+      "calories": 1580, "protein_g": 92, "carbs_g": 160, "fat_g": 55, "water_oz": 50,
+      "meals": { "breakfast": ["toast", "eggs"], "lunch": ["leftover steak", "salad"], "snack": ["crackers", "cheese"], "dinner": ["chicken soup", "bread"] }
+    },
+    {
+      "date": "2026-08-17",
+      "calories": 1990, "protein_g": 135, "carbs_g": 205, "fat_g": 63, "water_oz": 74,
+      "meals": { "breakfast": ["protein pancakes", "berries"], "lunch": ["grilled chicken sandwich"], "snack": ["banana", "almond butter"], "dinner": ["salmon", "quinoa", "spinach"] }
+    }
+  ]
+}

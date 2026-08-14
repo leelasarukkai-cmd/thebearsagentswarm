@@ -1,0 +1,13 @@
+{
+  "export_date": "2026-08-17",
+  "week_of": "2026-08-11",
+  "daily": [
+    { "date": "2026-08-11", "recovery_score_pct": 71, "hrv_ms": 52, "resting_hr_bpm": 58, "skin_temp_f": 98.2, "strain_score": 15.1, "sleep_performance_pct": 79, "sleep_hours": 6.25 },
+    { "date": "2026-08-12", "recovery_score_pct": 84, "hrv_ms": 67, "resting_hr_bpm": 55, "skin_temp_f": 98.0, "strain_score": 8.2, "sleep_performance_pct": 91, "sleep_hours": 7.25 },
+    { "date": "2026-08-13", "recovery_score_pct": 62, "hrv_ms": 44, "resting_hr_bpm": 60, "skin_temp_f": 98.4, "strain_score": 16.8, "sleep_performance_pct": 71, "sleep_hours": 5.67 },
+    { "date": "2026-08-14", "recovery_score_pct": 58, "hrv_ms": 41, "resting_hr_bpm": 57, "skin_temp_f": 98.3, "strain_score": 7.4, "sleep_performance_pct": 87, "sleep_hours": 6.92 },
+    { "date": "2026-08-15", "recovery_score_pct": 76, "hrv_ms": 61, "resting_hr_bpm": 54, "skin_temp_f": 97.9, "strain_score": 18.3, "sleep_performance_pct": 95, "sleep_hours": 7.58 },
+    { "date": "2026-08-16", "recovery_score_pct": 43, "hrv_ms": 35, "resting_hr_bpm": 59, "skin_temp_f": 98.5, "strain_score": 9.1, "sleep_performance_pct": 77, "sleep_hours": 6.17 },
+    { "date": "2026-08-17", "recovery_score_pct": 67, "hrv_ms": 49, "resting_hr_bpm": 56, "skin_temp_f": 98.1, "strain_score": 12.4, "sleep_performance_pct": 84, "sleep_hours": 6.67 }
+  ]
+}
