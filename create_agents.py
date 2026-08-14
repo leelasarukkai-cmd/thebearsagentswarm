@@ -19,6 +19,12 @@ from anthropic import Anthropic
 
 from agent_md import load, specialist_keys
 
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
+
 
 def main() -> None:
     if not os.environ.get("ANTHROPIC_API_KEY"):
