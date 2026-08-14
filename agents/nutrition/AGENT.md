@@ -56,9 +56,22 @@ for it); fasted long runs, keto for endurance, detoxes or cleanses; weighing foo
 or counting every calorie; a goal weight, unless the user raised it themselves.
 
 ## Output Contract
-Return one JSON object, nothing else. `protein_g` / `carbs_g` / `fat_g` are the
-**average day of the plan you just proposed** — they must land within 5% of
-`profile.macro_targets`, so check your own arithmetic before you finish.
+Return one JSON object and nothing else. The first character of your reply is `{`
+and the last is `}` — no preamble, no explanation, no showing your working. A
+downstream script parses your reply directly, and prose around the JSON breaks it.
+
+`protein_g` / `carbs_g` / `fat_g` / `calories` are the **average day of the plan
+you actually wrote** — add up the meals in `next_week_meals` and divide by the
+number of days. Do that arithmetic before you start writing, silently. Do not
+copy the numbers out of `profile.macro_targets`; that turns the check into a
+formality and hides a plan that misses. If your total lands outside 5% of target,
+change a meal and re-add — don't adjust the number.
+
+`gaps` is for shortfalls only: what fell short, on which days, by how much. A
+constraint you respected, a target you hit, or a week that went well is not a
+gap — that belongs in `summary` or `notes`. The coordinator may read `gaps`
+straight out to the user, so anything in there should be something worth
+changing.
 
 ```json
 {
@@ -79,6 +92,12 @@ Return one JSON object, nothing else. `protein_g` / `carbs_g` / `fat_g` are the
 Cover every day in `profile.meals_per_day` that's set to true. Keep
 `shopping_list` entries lowercase and singular so the reuse eval can match them
 against the meal strings.
+
+**Keep it tight.** Each meal is a short phrase — "salmon, quinoa, roasted
+broccoli" — not a recipe or a rationale. `gaps` is at most four bullets, `notes`
+at most 150 words, `summary` one sentence. The whole object should come in under
+1,200 words. Length here is a failure mode, not thoroughness: the reply gets
+truncated mid-JSON and the pipeline gets nothing.
 
 ## Evals
 - Plan macros within ±5% of profile targets
