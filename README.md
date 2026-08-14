@@ -40,7 +40,7 @@ Onboarding Agent
 | Nutrition | Shane | Sonnet | `nutrition` + `profile` |
 | Workout | Michael | Sonnet | `workouts` + `profile` |
 | Recovery | Salma | Haiku | `recovery` + `profile` |
-| Safety Screener | — | Haiku | All agent outputs |
+| Safety Screener | Leela | Haiku | All agent outputs |
 | Synthesis | Eva | Sonnet | Full `weekly_snapshot.json` |
 | Coordinator | Leela | Opus | All agent outputs |
 
