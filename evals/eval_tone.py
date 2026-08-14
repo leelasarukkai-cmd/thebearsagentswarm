@@ -4,6 +4,7 @@ LLM-as-judge tone eval for the synthesis/coordinator agent output.
 
 import json
 import os
+import re
 from anthropic import Anthropic
 
 JUDGE_PROMPT = """You are evaluating the output of a health coaching AI. Score it on four dimensions, each 1-5. Be honest — a lenient score on a mediocre output is a failure of the eval.
@@ -70,6 +71,9 @@ def eval_tone(agent_output: str, profile: dict) -> dict:
     )
 
     raw = response.content[0].text.strip()
+    # Judge sometimes wraps the JSON in a ```json ... ``` fence despite being
+    # told not to — strip it before parsing.
+    raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw.strip(), flags=re.IGNORECASE)
     return json.loads(raw)
 
 
