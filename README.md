@@ -15,20 +15,24 @@ Onboarding Agent
       ↓
   normalize.py → weekly_snapshot.json
       ↓
-┌─────────────────────────────────┐
-│  Nutrition Agent (Sonnet)       │  → Shane
-│  Workout Agent (Sonnet)         │  → Michael
-│  Recovery Agent (Haiku)         │  → Salma
-└─────────────────────────────────┘
-      ↓
-  Safety Screener
-      ↓
-  Synthesis Agent (Sonnet)        → Eva
-      ↓
-  Coordinator Agent (Opus)        → Leela
+┌───────────────────────────────────────────────────────────┐
+│  Coordinator Agent (Opus) — Leela                          │
+│                                                             │
+│  ┌─────────────────────────────────┐                       │
+│  │  Nutrition Agent (Sonnet)       │  → Shane               │
+│  │  Workout Agent (Sonnet)         │  → Michael    parallel │
+│  │  Recovery Agent (Haiku)         │  → Salma                │
+│  └─────────────────────────────────┘                       │
+│                ↓                                            │
+│         Safety Screener (Haiku) — Leela                     │
+│                ↓                                            │
+│         Synthesis Agent (Sonnet) — Eva                      │
+└───────────────────────────────────────────────────────────┘
       ↓
   Text to user
 ```
+
+The coordinator is the top-level orchestrator, not a separate step after synthesis — it fans work out to nutrition/workout/recovery in parallel, then runs the safety screener, then synthesis, and delivers the reconciled text itself.
 
 ---
 
@@ -93,6 +97,7 @@ thebearsagentswarm/
 │   ├── eval_nutrition.py
 │   ├── eval_workout.py
 │   ├── eval_recovery.py
+│   ├── eval_synthesis.py
 │   └── eval_tone.py
 ├── normalize.py
 ├── agent_md.py                 # parses agents/*/AGENT.md → model + system prompt
