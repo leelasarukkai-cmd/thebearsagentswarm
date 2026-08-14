@@ -53,7 +53,7 @@ Each agent has its own folder under `agents/` with an `AGENT.md` describing its 
 ```bash
 cd thebearsagentswarm
 pip install -r requirements.txt
-export ANTHROPIC_API_KEY="sk-ant-..."
+export ANTHROPIC_API_KEY="sk-ant-..."   # or put it in a .env file — it's auto-loaded
 ```
 
 ## Run
@@ -76,6 +76,7 @@ thebearsagentswarm/
 │   ├── nutrition/AGENT.md
 │   ├── workout/AGENT.md
 │   ├── recovery/AGENT.md
+│   ├── recovery/create_recovery_specialist.py
 │   ├── safety/AGENT.md
 │   ├── synthesis/AGENT.md
 │   └── coordinator/AGENT.md
@@ -94,6 +95,7 @@ thebearsagentswarm/
 │   ├── eval_recovery.py
 │   └── eval_tone.py
 ├── normalize.py
+├── agent_md.py                 # parses agents/*/AGENT.md → model + system prompt
 ├── create_agents.py
 ├── create_coordinator.py
 ├── run_milo.py
