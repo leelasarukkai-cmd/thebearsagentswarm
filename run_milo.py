@@ -19,6 +19,12 @@ from pathlib import Path
 
 from anthropic import Anthropic
 
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
+
 
 SNAPSHOT_PATH = Path("synthetic-data/weekly_snapshot.json")
 
