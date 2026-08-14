@@ -1,0 +1,19 @@
+# Managed Agents artifacts (per-developer, never commit — these are cloud IDs)
+.environment_id
+.specialist_ids.json
+.coordinator_id
+.skill_ids.json
+.last_session_id
+
+# Runtime output
+outputs/
+
+# The onboarding flow produces this; a sample lives at synthetic-data/sample-profile.json
+profile.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
