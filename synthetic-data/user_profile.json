@@ -22,7 +22,6 @@
   },
   "preferred_data_sources": {
     "sleep": "oura",
-    "recovery": "whoop",
     "workouts": "garmin",
     "nutrition": "myfitnesspal"
   }

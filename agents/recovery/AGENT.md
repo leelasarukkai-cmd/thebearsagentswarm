@@ -7,7 +7,7 @@
 Reviews sleep and recovery data from the past week and recommends changes for next week.
 
 ## Data In
-- `weekly_snapshot.recovery` — HRV, sleep hours, recovery scores (Whoop/Oura)
+- `weekly_snapshot.recovery` — HRV, resting HR, sleep hours, recovery scores (Whoop only)
 - `weekly_snapshot.profile` — goal, schedule constraints
 
 ## Output Contract
@@ -23,4 +23,4 @@ Reviews sleep and recovery data from the past week and recommends changes for ne
 
 ## Evals
 - Sleep target (hours) included in recommendation
-- If any day's recovery score < 25 (Whoop or Oura readiness), rest day recommended
+- If any day's Whoop `recovery_score_pct` < 25, rest day recommended
